@@ -85,7 +85,7 @@ do
 		function sig:wait()
 			mSignaler.Event:wait()
 			assert(mArgData, "Missing arg data, likely due to :TweenSize/Position corrupting threadrefs.")
-			return unpack(mArgData, 1, mArgDataCount)
+			return unpack(mArgData, 2, mArgDataCount)
 		end
 
 		return sig
